@@ -1,0 +1,8 @@
+<div class="container">
+<label class="form-control">Input</label>
+<!--<input type="text"  (keyup)="onInput($event)"/>-->
+<input type="text"  [(ngModel)]="serverName" />
+<button class="btn btn-primary create-server" (click)="onServerClick()">Create Server</button>
+
+<p>abcccc{{serverName}}   count: {{ count$ | async }}</p>
+</div>
